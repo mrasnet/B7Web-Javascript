@@ -1,0 +1,29 @@
+<!--  #M2  aula #13 e #14: Distâncias e Scroll Suave / Resposta do Exercício Scroll
+
+   
+    document    :       para referir-se ao scrollbar de um elemento 
+        scrollTop       - retorna a posição do scrollbar vertical
+        scrollLeft      - retorna a posição do scrollbar horizontal (caso exista)
+
+    window      :       para referir-se ao scrollbar da página
+        scrollY         - retorna a posição do scrollbar vertical
+        scrollX         - retorna a posição do scrollbar horizontal (caso exista)
+    
+    document / window
+        scrollTo(x,y)   - permite rolar o scrollbar para a posição informada
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Curso de Javascript</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada odio ut aliquet eleifend. Integer mollis mi in nunc mollis, at fringilla elit ultricies. In eget leo sed augue ornare pellentesque at a nisl. Quisque pellentesque tristique gravida. Suspendisse tincidunt arcu sed iaculis convallis. Ut vitae facilisis ex, vitae auctor urna. Nam pretium erat eu iaculis consequat. Nulla posuere nibh eu arcu interdum cursus. Nam in laoreet lacus, in maximus turpis. Morbi dolor arcu, maximus placerat nulla vel, efficitur lobortis lectus.</div>
+    <div onclick="subirTela()" class="scrollbutton"></div>
+
+    <script src="script.js"></script>
+    <!-- código/referencia js no final do body, melhora a peformance da página-->
+</body>
+</html>

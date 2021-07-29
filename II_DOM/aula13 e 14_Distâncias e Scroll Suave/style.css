@@ -1,0 +1,36 @@
+/*  #M2  aula #13 e #14: Distâncias e Scroll Suave / Resposta do Exercício Scroll
+
+   
+    document    :       para referir-se ao scrollbar de um elemento 
+        scrollTop       - retorna a posição do scrollbar vertical
+        scrollLeft      - retorna a posição do scrollbar horizontal (caso exista)
+
+    window      :       para referir-se ao scrollbar da página
+        scrollY         - retorna a posição do scrollbar vertical
+        scrollX         - retorna a posição do scrollbar horizontal (caso exista)
+    
+    document / window
+        scrollTo(x,y)   - permite rolar o scrollbar para a posição informada
+*/
+
+.texto{
+    height: 900px;
+    width: 200px;
+    overflow: auto; /* Se o conteúdo não couber inteiramente, ativa a barra de rolagem */
+    background-color: #CCC;
+    padding: 20px;
+    border: 2px solid #f00;
+}
+.scrollbutton{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f00;
+    /* posição fixa */
+    position: fixed; 
+    right: 20px;
+    bottom: 20px;
+    z-index: 999; /* Para ficar acima de todo o conteúdo */
+    cursor: pointer; /* Para aparecer a mãozinha do cursor */
+    display: none;
+}

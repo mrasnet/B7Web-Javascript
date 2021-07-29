@@ -1,0 +1,22 @@
+/* -------------------- M3: Aula #3: Mudança de estilos -----------------------
+
+    classList       - permite atribuir uma lista de classes a um elemento
+    add             - adiona uma classe à lista de classes
+    remove          - remove uma classe de uma lista de classes
+*/
+.azul{
+    background-color: blue;
+    color: white;
+}
+.vermelho{
+    background-color: red;
+    color: white;
+}
+.verde{
+    background-color: green;
+    color: white;
+}
+
+#telefone{
+    display: none;
+}

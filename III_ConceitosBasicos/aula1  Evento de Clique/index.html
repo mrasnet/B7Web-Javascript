@@ -1,0 +1,42 @@
+<!---------------------------------------------- M3: Aula #1: Evento de Clique  ---------
+
+        onclick         - evento de clique
+        onmouseover     - evento de mouse sobre
+        onmouseout      - evento de mouse fora
+
+        this            - retorna o próprio elemento
+
+    O parametro onclick etc. pode ser usado em qualquer elemento do html para alterar qualquer elemento no html 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Curso de Javascript</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- onclick no h1-->
+    <h1 id="titulo" onclick="alert('clicou no titulo h1')">Seja Bem vindo(a)</h1>
+    <!-- onmouseover no h2-->
+    <h2 id="subtitulo" onmouseover="console.log('mouse no h2')">Subtítulo</h2>
+    <!-- onmouseout no input-->
+    <input id="campo" 
+        onmouseover="console.log('mouse no campo')" 
+        onmouseout="console.log('mouse fora do campo')"
+        onclick="console.log('clicou no campo');"       
+    type="text" name="usuario" value="nome de usuário" />
+    
+    
+    <!-- dentro do onclick é executado código javascript puro -->
+    <button onclick="clique()">Confirmar</button>
+    <!-- Passando código javascript puro no lugar da função, aspas simples tiveram que ser usadas pelo o fato do código já tá inserido dentro 
+    de aspas duplas -->
+    <button onclick="document.getElementById('subtitulo').innerHTML='H2 alterado';">Click</button>
+    <!-- usando o this para alterar o próprio elemento. -->
+    <button onclick="this.innerHTML='Clicado'">Clicar</button>
+
+    <script src="script.js"></script>
+    <!-- código/referencia js no final do body, melhora a peformance da página-->
+</body>
+</html>

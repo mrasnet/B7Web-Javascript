@@ -1,0 +1,34 @@
+<!--  #M2  aula #2: Selecionando Elementos (4 funções) 
+
+    formas de selecionar elemento(s) no javascript:
+    
+    Por ordem de mais usados:
+
+    1. getElementById('id_do_elemento')             - retorna o elemento com o id informado
+    2. getElementsByClassName('class_nome')         - retorna um array com os elementos com a classe informada
+        getElementsByClassName('class_nome')[i]     - através do indice do array é possível retornar o elemento na posição informada
+
+    3. getElementsByTagName('nome_da_tag')          - retorna um array com os elementos da tag informada
+    4. getElementsByName('name_do_input')           - retorna um array com os elementos que possuam o name informado
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <title>Título do site</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <div id="exemplo">Bem Vindo!</div>
+
+    <div class="teste"></div>
+    <div class="teste"></div>
+
+    <input type="email" name="email">
+    <button></button>
+
+    <script src="script.js"></script>
+    <!-- código/referencia js no final do body, melhora a peformance da página-->
+</body>
+</html>

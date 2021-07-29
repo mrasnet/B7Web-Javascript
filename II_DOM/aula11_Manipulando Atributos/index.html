@@ -1,0 +1,28 @@
+<!--    #M2  aula #11: Manipulando Atributos
+
+    setAttribute(arg1, arg2)        - permite setar um valor a um atributo
+        arg1: referente ao atributo
+        arg2: referente ao valor a ser atribuido ao atributo
+    
+    getAttribute(arg1)              - permite retornar o valor de um atributo
+        arg1: referente ao atributo
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Curso de Javascript</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <img src="imagens/dog.png" data-animal='cachorro' class="imagem"><br>
+
+    <button onclick="trocarImagem('dog.png', 'cachorro')">Cachorro</button>
+    <button onclick="trocarImagem('cat.png', 'gato')">Gato</button>
+    
+    <button onclick="pegarAnimal()">Qual é o animal?</button>
+
+    <script src="script.js"></script>
+    <!-- código/referencia js no final do body, melhora a peformance da página-->
+</body>
+</html>

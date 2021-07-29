@@ -1,0 +1,54 @@
+/*--------------------- M3: Aula #7: Projeto: Menu de Navegação ----------------------- */
+@charset "UTF-8";
+body {
+    background-image: url('fundo.png');
+    color:#0777a3;
+}
+h1{ /* Adicionei posteriormente*/
+    text-shadow: 1px 1px 3px #000;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 20px #0777a3; /* hori. verti. espalhamento e cor*/
+}
+aside {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999;
+    display:flex;  
+}
+#menu-opener {
+    width:40px;
+    height:40px;
+    cursor:pointer; /* permite exibir aparencia de clicável */
+    margin-top:10px;
+    margin-right:10px;
+}
+#menu-area {
+    width:0px;
+    height:100vh;
+    background:#0b526e; 
+    overflow-x:hidden;
+    overflow-y:auto;
+    transition: all ease .5s;
+}
+.menu-opened{ /* !important atribui prioridade, */ 
+    width: 200px !important;  
+}
+#menu-area ul, #menu-area li {
+    padding:0;
+    list-style:none;
+}
+#menu-area li {
+    display:block;
+    padding:10px;
+    color:#ffffff; 
+    cursor:pointer;
+}
+#menu-area li:hover {
+    background:#DDD;
+    color: #0777a3;
+}
