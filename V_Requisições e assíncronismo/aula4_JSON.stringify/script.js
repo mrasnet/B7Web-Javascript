@@ -1,6 +1,6 @@
 /* --------------------- #M5 aula #4: JSON.stringify ----------------------- 
 
-    O contrário da função 'parse' - irá pegar um JSON e transformá-lo em string 
+    O contrário da função 'parse' - irá pegar um JSON e transformá-lo em string.
 */
 
 let reqResult = {
