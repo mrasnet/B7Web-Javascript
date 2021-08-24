@@ -11,7 +11,7 @@
 let pessoa = {
         nome: "Naruto",
         idade: 22,
-        caracteristicas: ['não desiste nunca', 'ama lamen', 'manja dos jutsu']
+        caracteristicas: ['não desiste nunca', 'ama lamen', 'manja dos jutsus']
 };
 
 console.log(pessoa);
