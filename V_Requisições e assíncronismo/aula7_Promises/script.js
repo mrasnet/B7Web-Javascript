@@ -51,9 +51,9 @@ console.log("*Código depois");
 
     temp
         .then(function(resultado){
-        console.log("TEMPERATURA: "+resultado);//utiliza o resultado no código
+            console.log("TEMPERATURA: "+resultado);
         })
         .temp.catch(function(error){
-        console.log("Eita, deu erro!");
+            console.log("Eita, deu erro!");
         });
 */
