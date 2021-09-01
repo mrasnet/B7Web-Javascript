@@ -1,0 +1,28 @@
+<!--    #M5 aula #13: Thumbnails com JS
+    
+    Como gerar uma thumbnail de uma imagem - pegar a própria imagem antes mesmo de fazer o upload
+    
+    ou seja, temos um campo de selecionar a imagem e quando clicarmos que selecionarmos a imagem, iremos pegar imediatamente via javascript essa
+    imagem e já mostrar na tela sem precisar fazer upload dela.
+
+    Muito útil para quando precisamos visualizar a imagem antes de fazer o upload dela.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <title>Título do site</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <h1>#M5 aula #13: Thumbnails com JS</h1>
+    <!-- 'accept' está definido para aceitar apenas imagens -->
+    <input type="file" accept="image/*" id="imagem" />
+    <button onclick="mostrar()">Mostrar</button>
+
+    <div id="area"></div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

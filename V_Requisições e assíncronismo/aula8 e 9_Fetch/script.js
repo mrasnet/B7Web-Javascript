@@ -61,6 +61,6 @@ function montarBlog(lista){
 
 /* OBS: Pode ser que em dada situação estejamos abrindo o arquivo HTML não através de um servidor - mesmo que interno - se tivermos abrindo o 
 arquivo HTML - puro mesmo - muito provavelmente quando dermos o fetch irá dar o erro chamado "Erro de cores" - cores ref. à 'CORE'.
-Assim, não temos como fazer requisições a um site externo através do arquivo aberto com o 'file:caminho_diretório'. Para isso temos que utilizar
-ou um servidor interno ou hospedar o arquivo em alguma hospedagem e assim conseguir utilizar acessando normalmente. 
+Assim, não temos como fazer requisições a um site externo através do arquivo aberto com o caminho 'file:caminho_diretório'. Para isso temos que
+utilizar ou um servidor interno ou hospedar o arquivo em alguma hospedagem e assim conseguir utilizar acessando normalmente. 
 O fato é que temos que acessar através do protocolo HTTP para conseguirmos fazer requisições normalmente. */
