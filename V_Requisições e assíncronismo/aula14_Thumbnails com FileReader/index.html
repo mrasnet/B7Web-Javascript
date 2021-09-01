@@ -1,0 +1,24 @@
+<!--    #M5 aula #14: Thumbnails com FileReader
+
+    Alternativa para o 'URL.createObjectURL' para ler uma imagem e exibir ela na tela. Com isso, temos dois métodos que podemos utilizar, o 
+    último é síncrono e esse é 'levemente' assíncrono.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <title>Título do site</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <h1>#M5 aula #14: Thumbnails com FileReader</h1>
+    <!-- 'accept' está definido para aceitar apenas imagens -->
+    <input type="file" accept="image/*" id="imagem" />
+    <button onclick="mostrar()">Mostrar</button>
+
+    <div id="area"></div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
